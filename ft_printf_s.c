@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_s.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmerveil <lmerveil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: louismdv <louismdv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 11:42:19 by louismdv          #+#    #+#             */
-/*   Updated: 2023/11/24 15:39:26 by lmerveil         ###   ########.fr       */
+/*   Updated: 2023/11/27 17:49:33 by louismdv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	ft_printf_s(const char *str)
+int	ft_printf_s(const char *str)
 {
 	if (str == NULL)
 		return (write(1, "(null)", 6));

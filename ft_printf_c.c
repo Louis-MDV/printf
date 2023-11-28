@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_c.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmerveil <lmerveil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: louismdv <louismdv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:48:12 by lmerveil          #+#    #+#             */
-/*   Updated: 2023/11/24 19:13:31 by lmerveil         ###   ########.fr       */
+/*   Updated: 2023/11/27 17:52:48 by louismdv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 int	ft_printf_c(const char c)
-{	
+{
 	ft_putchar_fd(c, 1);
 	return (1);
 }

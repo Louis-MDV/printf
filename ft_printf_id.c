@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_id.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmerveil <lmerveil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: louismdv <louismdv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 15:30:11 by lmerveil          #+#    #+#             */
-/*   Updated: 2023/11/24 19:15:20 by lmerveil         ###   ########.fr       */
+/*   Updated: 2023/11/27 17:54:26 by louismdv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	digitcount(int nb)
 
 static int	ft_printf_id(int nb)
 {
-	if (nb == NULL)
+	if (nb == '\0')
 		return (0);
 	ft_putnbr_fd(nb, 1);
 	return (digitcount(nb));

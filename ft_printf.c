@@ -6,7 +6,7 @@
 /*   By: louismdv <louismdv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 11:14:06 by louismdv          #+#    #+#             */
-/*   Updated: 2023/11/27 18:47:53 by louismdv         ###   ########.fr       */
+/*   Updated: 2023/11/29 11:08:19 by louismdv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int	ft_printf(const char *format, ...)
 
 	i = 0;
 	count = 0;
+	if (!format)
+		return (0);
 	va_start(ap, format);
 	while (format[i])
 	{
